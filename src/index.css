@@ -8,10 +8,17 @@
 }
 
 :root {
-  --color-bg: white;
-  --color-text-primary: black;
+  --color-bg: rgb(95, 94, 94);
+  --color-text-primary: white;
   --color-hyperlink: rgb(80,152,184);
+  --color-hyperlink-active: rgb(0, 179, 255);
+  --color-navbar-background: rgba(0,0,0,0.3);
+  --color-navbar-background-hover: rgba(0,0,0,0.2);
   --transition: all 400ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
 }
 
 html {
@@ -26,10 +33,21 @@ body {
   margin: 0;
   font-family: 'Poppins', 'sans-serif';
   background: var(--color-bg);
-  color: var(--color-hyperlink);
+  color: var(--color-text-primary);
+  background-image: url(../src/assets/bg-texture.png);
+  line-height: 2rem;
 }
 
 a {
   color: var(--color-hyperlink)
 }
 
+h1, h2, h3, h4, h5 {
+  font-weight: 500;
+}
+
+img{
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
