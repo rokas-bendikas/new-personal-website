@@ -10,6 +10,7 @@
 }
 #bottom-alert .alert-custom{
     background: var(--color-navbar-background);
+    border-radius: 3rem 3rem 0 0;
 }
 
 #bottom-alert a{

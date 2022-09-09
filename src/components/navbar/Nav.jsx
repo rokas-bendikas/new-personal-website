@@ -3,6 +3,10 @@ import {AiOutlineUser} from 'react-icons/ai'
 import {BiBook} from 'react-icons/bi'
 import {BiMessageSquareDetail} from 'react-icons/bi'
 
+import {MdScience} from 'react-icons/md'
+
+import {AiOutlineMail} from 'react-icons/ai'
+
 import  {NavLink} from 'react-router-dom'
 
 import "./Nav.css"
@@ -12,8 +16,8 @@ const WebsiteNavbar = () => {
         <nav>
             <NavLink to='/'><AiOutlineHome /></NavLink>
             <NavLink to='/projects'><AiOutlineUser /></NavLink>
-            <NavLink to='/publications'><BiBook /></NavLink>
-            <NavLink to='/contacts'><BiMessageSquareDetail /></NavLink>
+            <NavLink to='/publications'><MdScience /></NavLink>
+            <NavLink to='/contacts'><AiOutlineMail /></NavLink>
         </nav>
     );   
 }

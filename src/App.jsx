@@ -1,10 +1,8 @@
 import AppRouter from './components/router/AppRouter';
-import Background from './assets/bg-texture.png'
-
 
 const App = () => {
   return (
-    <div className='App' style={{backgroundImage: `url(${Background})`}}>
+    <div className='App'>
       <AppRouter />
     </div>
   );
