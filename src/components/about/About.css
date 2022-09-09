@@ -1,29 +1,38 @@
-.about-section {
-    /* border: 1px solid black; */
+#about-container {
     padding-top: 2rem;
     padding-bottom: 2rem;
     justify-content: center;
     text-align: justify;
 }
 
-.about-section > .header{
-    /* border: 1px solid black; */
+#about-container > #header-row{
     padding-top: 2rem;
     padding-bottom: 2rem;
 
 }
 
-.about-section .my-photo-block {
+#about-container .my-photo-block {
     padding: 0rem 3rem;
     align-items: center;
     display: flex;
 }
 
-.about-section img {
+#about-container .my-photo-shadow{
+    background: black;
+    border-radius: 5rem;
+}
+
+#about-container img {
     border-radius: 5rem;
     width: 20rem;
     margin-left: auto;
     margin-right: auto;
+    transform: rotate(10deg);
+}
+
+#about-container img:hover{
+    transform: rotate(0deg);
+    transition: var(--transition);
 }
 
 

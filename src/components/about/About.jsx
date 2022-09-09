@@ -4,8 +4,8 @@ import ME from "../../assets/self.jpeg"
 
 const About = (props) => {
     return(
-        <Container className="about-section">
-            <Row className="header">
+        <Container id="about-container">
+            <Row id="header-row">
                 <Col xs={12} className="text-center">
                     <h5>Hello, I'm</h5>
                     <h1>Rokas Bendikas</h1>
@@ -15,13 +15,13 @@ const About = (props) => {
 
                 <Col xs={12} lg={6} className="text-justify">
                     <p>
-                    I am a PhD student at University College London, working in the field of Robotic Control and Robot Learning. 
+                    I am a PhD student at <a href="https://www.ucl.ac.uk" >University College London</a>, working in the field of Robotic Control and Robot Learning. 
                     My research project is focused on ‘Learning priors of high-level and low-level motion representations for autonomous robot control’. 
                     The project is fully-funded for 4 years by CDT in Foundational AI programme. 
                     The project is supervised by Prof. Danail Stoyanov and Dr. Francisco Vasconcelos.
                     </p>
                     <p>
-                    During my Master’s studies, I completed my thesis at Dyson Robotics Lab, supervised by Prof. Andrew Davison. 
+                    During my Master’s studies, I completed my thesis at <a href="https://www.imperial.ac.uk/dyson-robotics-lab/" >Dyson Robotics Lab</a>, supervised by Prof. Andrew Davison. 
                     My project introduced imagination-augmented DQN, that allowed to learn optimal behavioural policy in dynamically complex environments.
                     </p>
                     <p>
@@ -31,7 +31,9 @@ const About = (props) => {
                 </Col>
 
                 <Col xs={12} lg={6} className="my-photo-block">
-                    <img src={ME} alt='A picture of myself' />
+                    <div className="my-photo-shadow">
+                        <img src={ME} alt='A virtual representation of myself' />
+                    </div>
                 </Col>
 
             </Row>
