@@ -18,61 +18,55 @@ const Contacts = (props) => {
     }
 
     return(
-        <Container id="contact-container">
+        <div id="contacts-container" className="section-container">
 
             {/* The row containing all the text at the top */}
-            <Row className='text-center my-3'>
-                <p>
-                    <h1>Contact Me!</h1>
-                </p>
-                <p>
-                    <h5>Do you want to have a chat? Or maybe have some ideas about collaboration? Do bot hesitate to contact me using the form below!</h5>
-                </p>
-            </Row>
+            <div className='container-row'>
+                <div className="container-column">
+                    <p>
+                        <h1>Contact Me!</h1>
+                    </p>
+                    <p>
+                        <h5>Do you want to have a chat? Or maybe have some ideas about collaboration? Do bot hesitate to contact me using the form below!</h5>
+                    </p>
+                </div>
+            </div>
 
             {/* The row containing the email form and social media icons */}
-            <Row className="my-3">
+            <div id="contacts-body" className="container-row">
 
                 {/* The column containing the email form */}
-                <Col sm={12} lg={8} id='contact-form-block' >
-                    <Form onSubmit={handleSubmit}>
-                        <Form.Group className="mb-3" controlId="formName">
-                            <Form.Label><h4>Your name</h4></Form.Label>
-                            <Form.Control type="text" placeholder="Your name" />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="formEmail">
-                            <Form.Label>Your email</Form.Label>
-                            <Form.Control type="email" placeholder="Your email" />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="formText">
-                            <Form.Label>Message</Form.Label>
-                            <Form.Control as="textarea" rows={6} placeholder="Your message" />
-                        </Form.Group>
-                        <Button variant="custom" type="submit">Submit</Button>
-                    </Form>
-                </Col>
+                <div className="container-column" >
+                    <div id="contacts-form">
+                        <Form onSubmit={handleSubmit}>
+                            <Form.Group className="mb-3" controlId="formName">
+                                <Form.Label><h4>Your name</h4></Form.Label>
+                                <Form.Control type="text" placeholder="Your name" />
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="formEmail">
+                                <Form.Label>Your email</Form.Label>
+                                <Form.Control type="email" placeholder="Your email" />
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="formText">
+                                <Form.Label>Message</Form.Label>
+                                <Form.Control as="textarea" rows={6} placeholder="Your message" />
+                            </Form.Group>
+                            <Button variant="custom" type="submit">Submit</Button>
+                        </Form>
+                    </div>
+                </div>
 
                 {/* The column containing the social media icons */}
-                <Col sm={12} lg={4}>
-                    <Container className="container-social-icons">
-                        <Row className="justify-content-md-center">
-                            <Col sm={3} lg={12}>
-                                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer"><BsLinkedin /></a>
-                            </Col>
-                            <Col sm={3} lg={12}>
-                                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer"><BsGithub /></a>
-                            </Col>
-                            <Col sm={3} lg={12}>
-                                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer"><BsTwitter /></a>
-                            </Col>
-                            <Col sm={3} lg={12}>
-                                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer"><SiGooglescholar /></a>
-                            </Col>
-                        </Row>
-                    </Container>
-                </Col>
-            </Row>
-        </Container>
+                <div className="container-column" >
+                    <div id="contacts-social-icons">
+                        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer"><BsLinkedin /></a>
+                        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer"><BsGithub /></a>
+                        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer"><BsTwitter /></a>
+                        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer"><SiGooglescholar /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     );   
 }
 

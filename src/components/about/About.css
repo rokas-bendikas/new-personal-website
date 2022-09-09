@@ -1,38 +1,45 @@
 #about-container {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: fit-content;
+}
+
+#about-body {
     text-align: justify;
-}
-
-#about-container > #header-row{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-
-}
-
-#about-container .my-photo-block {
-    padding: 0rem 3rem;
-    align-items: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 #about-container .my-photo-shadow{
+    width: 20rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background: black;
     border-radius: 5rem;
 }
 
 #about-container img {
     border-radius: 5rem;
-    width: 20rem;
-    margin-left: auto;
-    margin-right: auto;
     transform: rotate(10deg);
 }
 
 #about-container img:hover{
     transform: rotate(0deg);
     transition: var(--transition);
+}
+
+/* =================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
+@media screen and (max-width: 1024px) {
+    #about-container #about-body{
+        grid-template-columns: 1fr;
+    }
+  
+}
+
+/* =================== MEDIA QUERIES (SMALL DEVICES) ==================== */
+@media screen and (max-width: 600px) {
+
 }
 
 

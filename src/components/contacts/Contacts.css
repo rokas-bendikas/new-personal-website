@@ -1,45 +1,32 @@
-#contact-container a {
-   font-size: 4rem; 
-   padding: 2rem;
-   display: flex;
-   border: 1px green solid;
-   width: fit-content;
+
+#contacts-container {
+    display: grid;
+    grid-template-rows: fit-content;
 }
 
-#contact-container .row {
-    border: 1px blue solid;
- }
-
-#contact-container .container-social-icons {
-    height: 100%;
-    border: 1px red solid;
-    align-items: center;
+#contacts-container #contacts-body {
+    display: grid;
+    grid-template-columns: 70% 30%;
 }
 
-.container-social-icons .row{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    border-radius: 3rem;
-    backdrop-filter: blur(1px);
+#contacts-container #contacts-form{
+    width: 30rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background: var(--color-navbar-background);
-    border: 1px yellow solid;
-    width: fit-content;
-}
-
-#contact-form-block{
-    padding: 2rem 1rem;
+    padding: 2rem;
     border-radius: 3rem;
-    background: var(--color-navbar-background);
-    backdrop-filter: blur(1px);
-    text-align: center;
 }
 
-#contact-form-block:hover{
-    background: var(--color-navbar-background-hover);
+#contacts-container #contacts-form:hover{
+    background-color: var(--color-navbar-background-hover);
     transition: var(--transition);
+    
 }
 
-#contact-container .btn-custom{
+#contacts-container .btn-custom{
     background-color: var(--color-hyperlink);
     color: var(--color-text-primary);
     border: none;
@@ -48,7 +35,54 @@
     border-radius: 3rem;
 }
 
-#contact-container .btn-custom:hover, .btn-custom:focus, .btn-custom:active, .btn-custom.active{
+#contacts-container .btn-custom:hover, .btn-custom:focus, .btn-custom:active, .btn-custom.active{
     background-color: var(--color-hyperlink-active);
     border: none;
+}
+
+#contacts-social-icons > a {
+    font-size: 3rem;
+    background: var(--color-navbar-background);
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 3rem;
+}
+
+#contacts-social-icons > a:hover {
+    background: var(--color-navbar-background-hover);
+    transition: var(--transition);
+}
+
+#contacts-social-icons{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* =================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
+@media screen and (max-width: 1024px) {
+    #contacts-container #contacts-body{
+        grid-template-columns: 1fr;
+    }
+
+    #contacts-social-icons{
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+
+}
+/* =================== MEDIA QUERIES (SMALL DEVICES) ==================== */
+@media screen and (max-width: 600px) {
+
+    #contacts-container #contacts-form{
+        width: 20rem;
+    }
+
 }
