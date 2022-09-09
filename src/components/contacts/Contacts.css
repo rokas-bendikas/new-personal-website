@@ -18,12 +18,11 @@
     background: var(--color-navbar-background);
     padding: 2rem;
     border-radius: 3rem;
+    transition: var(--transition);
 }
 
 #contacts-container #contacts-form:hover{
-    background-color: var(--color-navbar-background-hover);
-    transition: var(--transition);
-    
+    background-color: var(--color-navbar-background-hover);  
 }
 
 #contacts-container .btn-custom{
@@ -46,11 +45,11 @@
     width: fit-content;
     padding: 1rem;
     border-radius: 3rem;
+    transition: var(--transition);
 }
 
 #contacts-social-icons > a:hover {
     background: var(--color-navbar-background-hover);
-    transition: var(--transition);
 }
 
 #contacts-social-icons{
@@ -61,7 +60,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     gap: 3rem;
 }
 

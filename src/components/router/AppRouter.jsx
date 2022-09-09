@@ -7,6 +7,7 @@ import Publications from '../publications/Publications'
 import Contacts from '../contacts/Contacts'
 import NotFoundError from '../errors/NotFound'
 import WebsiteNavbar from '../navbar/Nav'
+import BottomAlert from '../alert/Alert'
 
 import AnimationLayout from './Transitions'
 
@@ -23,6 +24,7 @@ function AppRouter() {
             <Route path="*" element={<NotFoundError/>}/>
           </Route>
         </Routes>
+        <BottomAlert />
     </BrowserRouter>
   )
 }

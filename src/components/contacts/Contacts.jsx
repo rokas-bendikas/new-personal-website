@@ -1,5 +1,3 @@
-import { Container,Row,Col} from "react-bootstrap";
-
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
@@ -59,10 +57,10 @@ const Contacts = (props) => {
                 {/* The column containing the social media icons */}
                 <div className="container-column" >
                     <div id="contacts-social-icons">
-                        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer"><BsLinkedin /></a>
-                        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer"><BsGithub /></a>
-                        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer"><BsTwitter /></a>
-                        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer"><SiGooglescholar /></a>
+                        <a href="https://www.linkedin.com/in/rokas-bendikas/" target="_blank" rel="noreferrer"><BsLinkedin /></a>
+                        <a href="https://github.com/rokas-bendikas/" target="_blank" rel="noreferrer"><BsGithub /></a>
+                        <a href="https://twitter.com/bendikasrokas/" target="_blank" rel="noreferrer"><BsTwitter /></a>
+                        <a href="https://scholar.google.co.uk/citations?user=_4b1EvAAAAAJ&oi=ao" target="_blank" rel="noreferrer"><SiGooglescholar /></a>
                     </div>
                 </div>
             </div>

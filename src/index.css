@@ -16,11 +16,12 @@
   --color-navbar-background-hover: rgba(0,0,0,0.2);
   --transition: all 800ms ease;
 
-  --container-width-lg: 75%;
+  --container-width-lg: 1024px;
   --container-width-md: 80%;
   --container-width-sm: 90%;
 }
 
+/*
 html {
   scroll-behavior: smooth;
 }
@@ -28,15 +29,33 @@ html {
 ::-webkit-scrollbar{
   display: none;
 }
+*/
+
+.App{
+  border: 1px red solid;
+  height: 100%;
+}
 
 body {
   margin: 0;
   font-family: 'Poppins', 'sans-serif';
   background: var(--color-bg);
   color: var(--color-text-primary);
-  background-image: url(../src/assets/bg-texture.png);
   line-height: 2rem;
 }
+
+/*
+body::before{
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-image: url(../src/assets/bg-texture.png);
+}
+*/
 
 a {
   color: var(--color-hyperlink)
@@ -71,7 +90,6 @@ img{
   padding: 2rem;
 }
 
-
 /* =================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
 @media screen and (max-width: 1024px) {
 
@@ -94,5 +112,6 @@ img{
 @media screen and (max-width: 600px) {
   .section-container{
     width: var(--container-width-sm);
+    margin-bottom: 15rem;
   }
 }
