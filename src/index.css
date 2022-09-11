@@ -38,8 +38,16 @@ body {
   font-family: 'Poppins', 'sans-serif';
   background: var(--color-bg);
   color: var(--color-text-primary);
-  background-image: url(../src/assets/bg-texture.png);
   line-height: 2rem;
+  background-image: url(../src/assets/bg-texture.png);
+}
+
+hr {
+  height: 2px;
+  color: black;
+  background-color: black;
+  opacity: 1;
+  border-radius: 3rem;
 }
 
 /*
@@ -77,6 +85,7 @@ img{
   width: var(--container-width-lg);
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 15rem;
 }
 
 .container-row {
@@ -93,7 +102,6 @@ img{
 
   .section-container{
     width: var(--container-width-md);
-    margin-bottom: 10rem;
   }
 
   .container-row {
@@ -110,6 +118,5 @@ img{
 @media screen and (max-width: 600px) {
   .section-container{
     width: var(--container-width-sm);
-    margin-bottom: 15rem;
   }
 }

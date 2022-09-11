@@ -6,7 +6,7 @@ nav {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 6rem;
+    bottom: 7rem;
     display: flex;
     gap: 0.8rem;
     border-radius: 3rem;
@@ -34,4 +34,11 @@ nav a:hover {
 nav a.active {
     background: white;
     color: var(--color-hyperlink-active);
+}
+
+/* =================== MEDIA QUERIES (SMALL DEVICES) ==================== */
+@media screen and (max-width: 600px) {
+    nav{
+        bottom: 8rem;
+    } 
 }

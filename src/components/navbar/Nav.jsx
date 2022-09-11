@@ -1,10 +1,6 @@
 import {AiOutlineHome} from 'react-icons/ai'
 import {AiOutlineUser} from 'react-icons/ai'
-import {BiBook} from 'react-icons/bi'
-import {BiMessageSquareDetail} from 'react-icons/bi'
-
 import {MdScience} from 'react-icons/md'
-
 import {AiOutlineMail} from 'react-icons/ai'
 
 import  {NavLink} from 'react-router-dom'

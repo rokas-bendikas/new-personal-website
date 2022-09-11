@@ -1,7 +1,6 @@
 import { Container,Row,Col} from "react-bootstrap";
 import "./Publications.css"
 import ME from "../../assets/self.jpeg"
-import Transitions from '../router/Transitions'
 
 const Publications = (props) => {
     return(
@@ -32,7 +31,7 @@ const Publications = (props) => {
                 </Col>
 
                 <Col xs={12} md={6} className="my-photo-block">
-                    <img src={ME} alt='A picture of myself' />
+                    <img src={ME} alt='A representation of myself' />
                 </Col>
 
             </Row>

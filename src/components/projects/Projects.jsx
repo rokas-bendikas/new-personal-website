@@ -1,4 +1,3 @@
-import Transitions from '../router/Transitions'
 
 const Projects = (props) => {
     return(

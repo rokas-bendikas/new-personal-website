@@ -25,6 +25,10 @@
     background-color: var(--color-navbar-background-hover);  
 }
 
+#contacts-container #name, #email{
+    height: 4rem;
+}
+
 #contacts-container .btn-custom{
     background-color: var(--color-hyperlink);
     color: var(--color-text-primary);

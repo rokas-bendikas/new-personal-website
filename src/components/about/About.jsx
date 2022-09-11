@@ -34,6 +34,14 @@ const About = (props) => {
                     </div>
                 </div>
             </div>
+            <div className="container-row">
+                <hr />
+            </div>
+            <div id="about-header" className="container-row">
+                <div className="container-column">
+                    <h1>News</h1>
+                </div>
+            </div>
         </div>
     );   
 }
