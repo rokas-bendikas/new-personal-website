@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/new-personal-website/static/css/main.c69091af.css",
-    "main.js": "/new-personal-website/static/js/main.078a5c56.js",
+    "main.css": "/new-personal-website/static/css/main.40f7abba.css",
+    "main.js": "/new-personal-website/static/js/main.9a0a82e7.js",
     "static/media/self.jpeg": "/new-personal-website/static/media/self.acdf0aa31153b41cfebf.jpeg",
+    "static/media/ConstructingAHumanAtrialFibreAtlas.pdf": "/new-personal-website/static/media/ConstructingAHumanAtrialFibreAtlas.90416207d58918748202.pdf",
     "index.html": "/new-personal-website/index.html",
-    "main.c69091af.css.map": "/new-personal-website/static/css/main.c69091af.css.map",
-    "main.078a5c56.js.map": "/new-personal-website/static/js/main.078a5c56.js.map"
+    "main.40f7abba.css.map": "/new-personal-website/static/css/main.40f7abba.css.map",
+    "main.9a0a82e7.js.map": "/new-personal-website/static/js/main.9a0a82e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.c69091af.css",
-    "static/js/main.078a5c56.js"
+    "static/css/main.40f7abba.css",
+    "static/js/main.9a0a82e7.js"
   ]
 }
