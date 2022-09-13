@@ -1,26 +1,36 @@
-.publication {
+#pubications-container{
+    display: grid;
+    grid-template-rows: fit-content;
+}
+
+.publication-box {
     padding: 2rem;
     margin: 1rem 0;
     text-align: justify;
     border-radius: 3rem;
     background: var(--color-navbar-background);
     transition: var(--transition);
-
     display: grid;
     grid-template-columns: 80% 20%;
 }
 
-
 .publication-text{
     padding: 1rem;
-    border: 1px red solid;
 }
 
-.publication:hover {
+.publication-abstract{
+    text-align: justify;
+    padding: 2rem;
+    border-radius: 3rem;
+    background: white;
+    border: 1px dashed black;
+}
+
+.publication-box:hover {
     background: var(--color-navbar-background-hover);
 }
 
-.publication > .publication-icons {
+.publication-box > .publication-icons {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -28,7 +38,7 @@
     align-items: center;
 }
 
-#publications-body a {
+#publications-container a {
     font-size: 3rem;
     background: var(--color-navbar-background);
     width: fit-content;
@@ -37,6 +47,57 @@
     transition: var(--transition);
 }
 
-#publications-body a:hover {
+#publications-container a:hover {
     background: var(--color-navbar-background-hover);
 }
+
+#publications-container button {
+    color: var(--color-hyperlink);
+    font-size: 3rem;
+    background: var(--color-navbar-background);
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 3rem;
+    transition: var(--transition);
+}
+
+#publications-container button:hover {
+    color: var(--color-hyperlink-active);
+    background: var(--color-navbar-background-hover);
+}
+
+@keyframes inAnimation {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+  }
+  
+  @keyframes outAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+    }
+  }
+
+/* =================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
+@media screen and (max-width: 1024px) {
+    .publication-box {
+        grid-template-columns: 100%;
+    }
+
+    .publication-box > .publication-icons {
+        flex-direction: row;   
+        padding: 2rem 0;
+        gap: 4rem;
+    }
+}
+  
