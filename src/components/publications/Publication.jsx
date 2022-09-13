@@ -23,14 +23,16 @@ function Publication(props) {
     return (
         <>
         <div className="container-row publication-box">
-            <div className="container-column publication-text">
-                <b>{props.publication.title}</b>
-                <br />
-                <br />
-                {props.publication.authors}
-                <br />
-                <br />
-                <i>{props.publication.venue}</i>, {props.publication.year}
+            <div className="container-column">
+                <div className="publication-text">
+                    <b>{props.publication.title}</b>
+                    <br />
+                    <br />
+                    {props.publication.authors}
+                    <br />
+                    <br />
+                    <i>{props.publication.venue}</i>, {props.publication.year}
+                </div>
             </div>
             <div className="container-column publication-icons">
                 <Link to={process.env.PUBLIC_URL + props.publication.pdf} target="_blank"><AiFillFilePdf /></Link>
