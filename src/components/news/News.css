@@ -1,0 +1,14 @@
+.news-item{
+    padding: 0 !important;
+    grid-template-columns: 20% 80%;
+    background: var(--color-navbar-background);
+    border-radius: 3rem;
+}
+
+.news-date{
+    padding: 1 !important;
+}
+
+.news-content{
+    padding: 1 !important;
+}

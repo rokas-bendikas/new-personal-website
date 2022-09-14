@@ -50,19 +50,6 @@ hr {
   border-radius: 3rem;
 }
 
-/*
-body::before{
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.3;
-  background-image: url(../src/assets/bg-texture.png);
-}
-*/
-
 a {
   color: var(--color-hyperlink)
 }
@@ -86,15 +73,18 @@ img{
   margin: 0 auto;
   text-align: center;
   margin-bottom: 15rem;
+  border: 1px red solid;
 }
 
 .container-row {
   display: grid;
   padding: 1rem 0;
+  border: 1px blue solid;
 }
 
 .container-column{
   padding: 2rem;
+  border: 1px green solid;
 }
 
 /* =================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
