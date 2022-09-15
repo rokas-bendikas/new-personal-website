@@ -73,16 +73,13 @@ img{
   margin: 0 auto;
   text-align: center;
   margin-bottom: 15rem;
-  border: 1px red solid;
 }
 
 .container-row {
   display: grid;
-  border: 1px blue solid;
 }
 
 .container-column{
-  border: 1px green solid;
 }
 
 /* =================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
