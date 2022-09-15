@@ -3,14 +3,13 @@ import ME from "../../assets/self.jpeg"
 
 const About = (props) => {
     return(
-        <div id="about-container" className="section-container">
-            <div id="about-header" className="container-row">
+        <div className="section-container">
+            <div id="about-title" className="container-row">
                 <div className="container-column">
                     <h5>Hello, I'm</h5>
                     <h1>Rokas Bendikas</h1>
                 </div>
             </div>
-
             <div id="about-body" className="container-row">
                 <div className="container-column">
                     <p>
@@ -29,7 +28,7 @@ const About = (props) => {
                     </p>
                 </div>
                 <div className="container-column">
-                    <div className="my-photo-shadow">
+                    <div id="my-photo-shadow">
                         <img src={ME} alt='A virtual representation of myself' />
                     </div>
                 </div>

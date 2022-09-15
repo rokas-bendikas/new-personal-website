@@ -4,6 +4,6 @@ import "./Publications.css"
 
 export const Abstract = (props) => {
   return (
-    <div className='publication-abstract'>{props.publication.abstract}</div>
+    <div id='abstract-text'>{props.publication.abstract}</div>
   )
 }

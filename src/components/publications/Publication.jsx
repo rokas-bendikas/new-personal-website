@@ -22,9 +22,9 @@ function Publication(props) {
 
     return (
         <>
-        <div className="container-row publication-box">
+        <div id="publication-body" className="container-row">
             <div className="container-column">
-                <div className="publication-text">
+                <div id="publication-text">
                     <b>{props.publication.title}</b>
                     <br />
                     <br />
@@ -34,14 +34,20 @@ function Publication(props) {
                     <i>{props.publication.venue}</i>, {props.publication.year}
                 </div>
             </div>
-            <div className="container-column publication-icons">
-                <Link to={process.env.PUBLIC_URL + props.publication.pdf} target="_blank"><AiFillFilePdf /></Link>
-                <button onClick={() => {setButtonState(!buttonState)}}><RiFilePaperLine /></button>
+            <div className="container-column">
+                <div id="publication-icons">
+                    <Link to={process.env.PUBLIC_URL + props.publication.pdf} target="_blank"><AiFillFilePdf /></Link>
+                    <button onClick={() => {setButtonState(!buttonState)}}><RiFilePaperLine /></button>
+                </div>
             </div>
         </div>
-        <div style={buttonState ? mountedStyle : unmountedStyle}>
-            <Abstract publication={props.publication} />
-        </div>  
+        <div id="abstract-body" className="container-row">
+            <div className="container-column">
+                <div style={buttonState ? mountedStyle : unmountedStyle}>
+                    <Abstract publication={props.publication} />
+                </div>  
+            </div>
+        </div>
         </>
         
     )

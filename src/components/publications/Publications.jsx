@@ -5,9 +5,11 @@ import Publication from './Publication'
 const Publications = (props) => {
 
     return(
-        <div id="publications-container" className="section-container">
-            <div className="container-row">
-                <h1>Publications</h1>
+        <div className="section-container">
+            <div id="publications-title" className="container-row">
+                <div className="container-column">
+                    <h1>Publications</h1>
+                </div>
             </div>
             
             {

@@ -1,15 +1,18 @@
 
-#contacts-container {
-    display: grid;
-    grid-template-rows: fit-content;
+#contacts-title{
+    grid-template-columns: 1fr;
+    padding: 2rem;
 }
 
-#contacts-container #contacts-body {
-    display: grid;
+#contacts-body {
     grid-template-columns: 70% 30%;
 }
 
-#contacts-container #contacts-form{
+#contacts-body > .container-column{
+    padding: 2rem;
+}
+
+#contacts-body #contacts-form{
     width: 30rem;
     position: relative;
     top: 50%;
@@ -21,15 +24,15 @@
     transition: var(--transition);
 }
 
-#contacts-container #contacts-form:hover{
+#contacts-body #contacts-form:hover{
     background-color: var(--color-navbar-background-hover);  
 }
 
-#contacts-container #name, #email{
+#contacts-body #name, #email{
     height: 4rem;
 }
 
-#contacts-container .btn-custom{
+#contacts-body .btn-custom{
     background-color: var(--color-hyperlink);
     color: var(--color-text-primary);
     border: none;
@@ -38,7 +41,7 @@
     border-radius: 3rem;
 }
 
-#contacts-container .btn-custom:hover, .btn-custom:focus, .btn-custom:active, .btn-custom.active{
+#contacts-body .btn-custom:hover, .btn-custom:focus, .btn-custom:active, .btn-custom.active{
     background-color: var(--color-hyperlink-active);
     border: none;
 }
@@ -70,22 +73,24 @@
 
 /* =================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
 @media screen and (max-width: 1024px) {
-    #contacts-container #contacts-body{
+    #contacts-body{
         grid-template-columns: 1fr;
     }
 
     #contacts-social-icons{
         flex-direction: row;
         flex-wrap: wrap;
-        
     }
 
 }
 /* =================== MEDIA QUERIES (SMALL DEVICES) ==================== */
 @media screen and (max-width: 600px) {
+    #container-column-form{
+        padding: 0 !important;
+    }
 
-    #contacts-container #contacts-form{
-        width: 20rem;
+    #contacts-body #contacts-form{
+        width: 25rem;
     }
 
 }

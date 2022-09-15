@@ -1,16 +1,19 @@
-#about-container {
-    display: grid;
-    grid-template-rows: fit-content;
+#about-title{
+    grid-template-columns: 1fr;
+    padding: 2rem;
 }
 
 #about-body {
     text-align: justify;
-    display: grid;
     grid-template-columns: 50% 50%;
 }
 
-#about-container .my-photo-shadow{
-    width: 20rem;
+#about-body > .container-column{
+    padding: 2rem;
+}
+
+#about-body #my-photo-shadow{
+    width: 25rem;
     position: relative;
     top: 50%;
     left: 50%;
@@ -19,19 +22,19 @@
     border-radius: 5rem;
 }
 
-#about-container img {
+#about-body img {
     border-radius: 5rem;
     transform: rotate(10deg);
     transition: var(--transition);
 }
 
-#about-container img:hover{
+#about-body img:hover{
     transform: rotate(0deg);
 }
 
 /* =================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
 @media screen and (max-width: 1024px) {
-    #about-container #about-body{
+    #about-body{
         grid-template-columns: 1fr;
     }
   

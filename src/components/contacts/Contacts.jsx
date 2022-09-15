@@ -26,7 +26,7 @@ const Contacts = (props) => {
         formState: { errors }
       } = useForm();
 
-    // Function that displays a success toast on bottom right of the page when form submission is successful
+    // Function that displays a success toast on top right of the page when form submission is successful
     const toastifySuccess = () => {
         toast('Message sent!', {
         position: 'top-right',
@@ -70,10 +70,8 @@ const Contacts = (props) => {
     }
 
     return(
-        <div id="contacts-container" className="section-container">
-
-            {/* The row containing all the text at the top */}
-            <div className='container-row'>
+        <div className="section-container">
+            <div id="contacts-title" className='container-row'>
                 <div className="container-column">
                     <p>
                         <h1>Contact Me!</h1>
@@ -88,7 +86,7 @@ const Contacts = (props) => {
             <div id="contacts-body" className="container-row">
 
                 {/* The column containing the email form */}
-                <div className="container-column" >
+                <div id="container-column-form" className="container-column" >
                     <div id="contacts-form">
                         <Form onSubmit = {handleSubmit(onSubmit)} noValidate>
                             <Form.Group className="mb-3" controlId="name">

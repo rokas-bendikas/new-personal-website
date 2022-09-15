@@ -78,12 +78,10 @@ img{
 
 .container-row {
   display: grid;
-  padding: 1rem 0;
   border: 1px blue solid;
 }
 
 .container-column{
-  padding: 2rem;
   border: 1px green solid;
 }
 
@@ -92,14 +90,6 @@ img{
 
   .section-container{
     width: var(--container-width-md);
-  }
-
-  .container-row {
-    padding: 0;
-  }
-
-  .container-column{
-    padding: 2rem 0;
   }
   
 }
