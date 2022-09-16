@@ -10,7 +10,7 @@
 :root {
   --color-bg: rgba(220, 217, 217, 1);
   --color-text-primary: black;
-  --color-hyperlink: rgb(80,152,184);
+  --color-hyperlink: rgb(67, 112, 131);
   --color-hyperlink-active: rgb(0, 179, 255);
   --color-navbar-background: rgba(0,0,0,0.3);
   --color-navbar-background-hover: rgba(0,0,0,0.2);
