@@ -32,6 +32,38 @@
     transform: rotate(0deg);
 }
 
+.CV-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white !important;
+
+    width: 20rem;
+    height: 4rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5rem;
+
+    border-radius: 3rem;
+    background: var(--color-hyperlink);
+    transition: var(--transition);
+}
+
+.CV-button:hover{
+    background: var(--color-hyperlink-active);
+}
+
+.CV-button > a{
+    color: white;
+    text-decoration: none;
+}
+
+.CV-button > a:hover{
+    color: white;
+    text-decoration: none;
+}
+
 /* =================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
 @media screen and (max-width: 1024px) {
     #about-body{
@@ -42,7 +74,13 @@
 
 /* =================== MEDIA QUERIES (SMALL DEVICES) ==================== */
 @media screen and (max-width: 600px) {
+    #about-body > .container-column{
+        padding: 1rem;
+    }
 
+    #about-body #my-photo-shadow{
+        width: 20rem;
+    }
 }
 
 

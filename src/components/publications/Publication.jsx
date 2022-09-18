@@ -26,8 +26,7 @@ function Publication(props) {
             <div className="container-column">
                 <div id="publication-text">
                     <b>{props.publication.title}</b>
-                    <br />
-                    <br />
+                    <hr />
                     {props.publication.authors}
                     <br />
                     <br />

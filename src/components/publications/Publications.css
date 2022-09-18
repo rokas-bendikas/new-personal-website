@@ -104,4 +104,19 @@
         gap: 4rem;
     }
 }
+
+/* =================== MEDIA QUERIES (SMALL DEVICES) ==================== */
+@media screen and (max-width: 600px) {
+    #publication-body #publication-text{
+        padding: 1rem;
+    }
+
+    #publication-body {
+        padding: 1rem;
+    }
+
+    #abstract-body #abstract-text{
+        padding: 1rem;
+    }
+  }
   

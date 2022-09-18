@@ -29,10 +29,6 @@ html {
   display: none;
 }
 
-.App{
-  height: 100%;
-}
-
 body {
   margin: 0;
   font-family: 'Poppins', 'sans-serif';
@@ -80,6 +76,7 @@ img{
 }
 
 .container-column{
+  width: 100%;
 }
 
 /* =================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */

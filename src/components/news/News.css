@@ -40,4 +40,8 @@
     #news-item{
       padding: 1rem;
     }
-  }
+
+    #news-item #news-content{
+        text-align: left;
+    }
+}
