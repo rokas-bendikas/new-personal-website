@@ -32,7 +32,7 @@ const About = (props) => {
                 </div>
             </div>
             
-            <div className="container-row">
+            <div id="CV-row" className="container-row">
                 <div className="container-column">
                     <div className="CV-button">
                         <a href={CV} target="_blank" rel="noreferrer">My CV</a>
