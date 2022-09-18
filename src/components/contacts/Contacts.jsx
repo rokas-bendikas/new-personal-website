@@ -77,7 +77,7 @@ const Contacts = (props) => {
                         <h1>Contact Me!</h1>
                     </p>
                     <p>
-                        <h5>Do you want to have a chat? Or maybe have some ideas about collaboration? Do bot hesitate to contact me using the form below!</h5>
+                        <h5>Want to get in touch? Use the form below!</h5>
                     </p>
                 </div>
             </div>

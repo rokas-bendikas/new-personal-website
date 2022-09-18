@@ -13,16 +13,16 @@ const About = (props) => {
             </div>
             <div id="about-body" className="container-row">
                 <div className="container-column">
-                    
-                    I am a PhD student at <a href="https://www.ucl.ac.uk" >University College London</a>, working in the field of Robotic Control and Robot Learning. 
-                    My research project is focused on ‘Learning priors of high-level and low-level motion representations for autonomous robot control’. 
-                    The project is fully-funded for 4 years by CDT in Foundational AI programme. 
-                    The project is supervised by Prof. Danail Stoyanov and Dr. Francisco Vasconcelos.
-    
-                    During my Master’s studies, I completed my thesis at <a href="https://www.imperial.ac.uk/dyson-robotics-lab/" >Dyson Robotics Lab</a>, supervised by Prof. Andrew Davison. 
-                    My project introduced imagination-augmented DQN, that allowed to learn optimal behavioural policy in dynamically complex environments.
-
-                    Previously I was a research assistant in Cardio-Electro Magnetic Research Group (CEMRG), investigating atrial fibrillation mechanisms through the means of Deep Learning and Computational Modelling. 
+                    <p/>
+                    I am a PhD student at <a href="https://www.ucl.ac.uk" >University College London</a>, working in the field of Reinforcement Learning and Robot Learning. 
+                    My research is focused on learning control policies that are able to operate the robot in complex domains and it is supervised by Prof. Danail Stoyanov. 
+                    My work in Surgical Robot Vision group is focussed on learning manipulation policies for long-horizon tasks via semantic decomposition of the operational domain. 
+                    In the Robot Perception Lab, I work on low-level control policy learning problems for quadrupedal robots.
+                    <p/>
+                    During my Master's degree, I completed my thesis at <a href="https://www.imperial.ac.uk/dyson-robotics-lab/" >Dyson Robotics Lab</a>, supervised by Prof. Andrew Davison. 
+                    My project introduced imagination-augmented DQN, that allows to learn optimal behavioural policy in dynamically complex environments.
+                    <p/>
+                    Previously I was a research assistant in <a href="https://www.cemrg.co.uk">Cardio-Electro Magnetic Research Group (CEMRG)</a>, investigating atrial fibrillation mechanisms through the means of Deep Learning and Computational Modelling. 
                     My work was supervised by Dr. Caroline Roney and Prof. Steven Niederer. 
                 </div>
                 <div className="container-column">
