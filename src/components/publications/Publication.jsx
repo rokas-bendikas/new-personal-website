@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import  {Link} from 'react-router-dom'
 import {AiFillFilePdf} from 'react-icons/ai'
 import {RiFilePaperLine} from "react-icons/ri"
 
@@ -35,7 +34,7 @@ function Publication(props) {
             </div>
             <div className="container-column">
                 <div id="publication-icons">
-                    <Link to={process.env.PUBLIC_URL + props.publication.pdf} target="_blank"><AiFillFilePdf /></Link>
+                    <a href={props.publication.link} target="_blank" rel="noreferrer"><AiFillFilePdf /></a>
                     <button onClick={() => {setButtonState(!buttonState)}}><RiFilePaperLine /></button>
                 </div>
             </div>

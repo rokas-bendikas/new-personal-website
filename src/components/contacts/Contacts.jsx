@@ -131,7 +131,7 @@ const Contacts = (props) => {
                         <a href="https://www.linkedin.com/in/rokas-bendikas/" target="_blank" rel="noreferrer"><BsLinkedin /></a>
                         <a href="https://github.com/rokas-bendikas/" target="_blank" rel="noreferrer"><BsGithub /></a>
                         <a href="https://twitter.com/bendikasrokas/" target="_blank" rel="noreferrer"><BsTwitter /></a>
-                        <a href="https://scholar.google.co.uk/citations?user=_4b1EvAAAAAJ&oi=ao" target="_blank" rel="noreferrer"><SiGooglescholar /></a>
+                        <a href="https://scholar.google.co.uk/citations?user=_4b1EvAAAAAJ" target="_blank" rel="noreferrer"><SiGooglescholar /></a>
                     </div>
                 </div>
             </div>
